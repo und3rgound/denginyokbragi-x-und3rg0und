@@ -1,866 +1,154 @@
 <!DOCTYPE html>
-
-
-
 <html lang="tr">
-
-
-
 <head>
-
-
-
     <meta charset="UTF-8">
-
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-    
-
-
-
-    <meta name="description" content="SEIZED BY CEHENNEM.ONLINE">
-
-
-
-    <meta name="author" content="cehennem.online">
-
-
-
-    <meta name="theme-color" content="#6A0000">
-
-
-
-
-
-
-
-    <meta property="og:title" content="SEIZED BY CEHENNEM.ONLINE">
-
-
-
-    <meta property="og:description" content="BU SİTE CEHENNEM LORDLARI TARAFINDAN ELE GEÇİRİLMİŞTİR.">
-
-
-
-    <meta property="og:url" content="https://cehennem.online">
-
-
-
-    <meta property="og:site_name" content="cehennem.online">
-
-
-
-    <meta property="og:type" content="website">
-
-
-
-    <meta property="og:image" content="https://i.hizliresim.com/n3rbah6.png">
-
-
-
-    <meta property="og:image:type" content="image/jpeg">
-
-
-
-    <meta property="og:image:width" content="1200">
-
-
-
-    <meta property="og:image:height" content="675">
-
-
-
-
-
-
-
-    <meta name="twitter:card" content="summary_large_image">
-
-
-
-    <meta name="twitter:title" content="SEIZED BY CEHENNEM.ONLINE">
-
-
-
-    <meta name="twitter:description" content="BU SİTE CEHENNEM LORDLARI TARAFINDAN ELE GEÇİRİLMİŞTİR.">
-
-
-
-    <meta name="twitter:image" content="https://i.hizliresim.com/n3rbah6.png">
-
-
-
-
-
-
-
-    <title>!!! SYSTEM_BREACHED !!!</title>
-
-
-
-    <link rel="icon" href="https://cehennem.online/cehennem.png" type="image/png">
-
-
-
-    
-
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-
-
-
-
-
-
-
+    <title>denginyokbragi x und3rg0und</title>
     <style>
-
-
-
-        /* SİSTEM: TEMİZ ANARŞİ PALETİ */
-
-
-
-        :root {
-
-
-
-            --bg-color: #000000;
-
-
-
-            --hacked-color: #ff0000; /* Saf Kırmızı */
-
-
-
-            --highlight-color: #00ffff; /* Saf Siyan */
-
-
-
-            --font-title: 'Orbitron', sans-serif;
-
-
-
-            --font-terminal: 'Share Tech Mono', monospace;
-
-
-
-        }
-
-
-
-
-
-
-
-        /* TAM EKRAN VE KAYDIRMAYI ENGELLEME */
-
-
-
-        html, body {
-
-
-
-            margin: 0; 
-
-
-
-            padding: 0;
-
-
-
-            width: 100%; 
-
-
-
-            height: 100vh; 
-
-
-
-            overflow: hidden; 
-
-
-
-            background-color: var(--bg-color);
-
-
-
-        }
-
-
-
-        
-
-
-
         body {
-
-
-
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
             display: flex;
-
-
-
             flex-direction: column;
-
-
-
             align-items: center;
-
-
-
             justify-content: center;
-
-
-
+            margin: 0;
+            padding: 15px;
             text-align: center;
-
-
-
-            background-image: radial-gradient(circle, rgba(255, 0, 0, 0.08) 1px, transparent 1px), 
-
-
-
-                              repeating-linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.08) 1px, transparent 2px);
-
-
-
-            background-size: 4px 4px;
-
-
-
-            filter: saturate(1.2) contrast(1.1);
-
-
-
+            height: 100vh;
+            overflow: hidden;
         }
 
-
-
-
-
-
-
-        /* Ana Kapsayıcı - Ekrana sığma optimizasyonu */
-
-
-
-        #container {
-
-
-
-            max-width: 90%;
-
-
-
-            height: 90vh; 
-
-
-
-            display: flex;
-
-
-
-            flex-direction: column;
-
-
-
-            align-items: center;
-
-
-
-            justify-content: space-evenly; /* Öğeler arasına eşit boşluk */
-
-
-
-            padding: 1vh 0;
-
-
-
-            animation: global-flicker 1s infinite alternate;
-
-
-
-            cursor: pointer;
-
-
-
-            box-sizing: border-box;
-
-
-
+        .flag-img {
+            width: 400px;
+            max-width: 70%;
+            margin-bottom: 15px;
+            border-radius: 3px;
+            filter: brightness(0.8);
         }
 
-
-
-
-
-
-
-        @keyframes global-flicker {
-
-
-
-            0% { opacity: 1; filter: brightness(1); }
-
-
-
-            100% { opacity: 0.95; filter: brightness(0.95); }
-
-
-
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+            color: #ffffff;
         }
-
-
-
-
-
-
-
-        /* Banner Resmi */
-
-
-
-        #banner {
-
-
-
-            max-width: 100%;
-
-
-
-            width: clamp(300px, 60vw, 600px);
-
-
-
-            height: auto;
-
-
-
-            border: 3px dashed var(--hacked-color);
-
-
-
-            box-shadow: 0 0 15px var(--hacked-color), 0 0 30px var(--highlight-color);
-
-
-
-            filter: grayscale(100%) brightness(0.5) contrast(2) hue-rotate(330deg); 
-
-
-
-            transition: filter 0.8s ease, transform 0.5s ease;
-
-
-
-            margin-top: 20px; 
-
-
-
-            margin-bottom: 20px; 
-
-
-
-        }
-
-
-
-        
-
-
-
-        #container:hover #banner {
-
-
-
-            filter: none;
-
-
-
-            transform: scale(1.03);
-
-
-
-        }
-
-
-
-
-
-
-
-        /* ANA MESAJ */
-
-
-
-        .message {
-
-
-
-            font-family: var(--font-title);
-
-
-
-            font-size: clamp(2rem, 7vw, 4.5rem); 
-
-
-
-            color: var(--hacked-color);
-
-
-
-            text-shadow: 0 0 8px var(--hacked-color), 0 0 20px var(--highlight-color), 0 0 30px var(--hacked-color);
-
-
-
-            line-height: 1.2;
-
-
-
-            margin-bottom: 10px;
-
-
-
-            animation: chaos-glitch 0.1s infinite;
-
-
-
-        }
-
-
-
-
-
-
-
-        @keyframes chaos-glitch {
-
-
-
-            0% { text-shadow: 3px 0px var(--highlight-color), -3px 0px var(--hacked-color); transform: translate(1px, 0); }
-
-
-
-            25% { text-shadow: -3px 0px var(--hacked-color), 3px 0px var(--highlight-color); transform: translate(-1px, 0); }
-
-
-
-            50% { text-shadow: 0px 4px var(--highlight-color), 0px -4px var(--hacked-color); transform: translate(0, 1px); }
-
-
-
-            75% { text-shadow: 0px -4px var(--hacked-color), 0px 4px var(--highlight-color); transform: translate(0, -1px); }
-
-
-
-            100% { text-shadow: 3px 0px var(--highlight-color), -3px 0px var(--hacked-color); transform: translate(1px, 0); }
-
-
-
-        }
-
-
-
-
-
-
-
-        /* SLOGAN VE LİNK */
-
-
 
         .slogan {
-
-
-
-            font-family: var(--font-terminal);
-
-
-
-            font-size: clamp(1.2rem, 3vw, 2.5rem);
-
-
-
-            color: var(--highlight-color);
-
-
-
-            text-shadow: 0 0 8px var(--highlight-color);
-
-
-
-            margin-top: 15px;
-
-
-
-            text-transform: uppercase;
-
-
-
-            letter-spacing: 3px;
-
-
-
-            animation: neon-pulse 2s infinite alternate;
-
-
-
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ffffff;
         }
 
-
-
-
-
-
-
-        @keyframes neon-pulse {
-
-
-
-            from { text-shadow: 0 0 5px var(--highlight-color); }
-
-
-
-            to { text-shadow: 0 0 20px var(--highlight-color), 0 0 30px rgba(0, 255, 255, 0.5); }
-
-
-
+        .verses {
+            margin-bottom: 15px;
+            width: 90%;
+            max-width: 550px;
         }
 
+        .verse {
+            margin: 6px 0;
+            padding: 4px 0;
+        }
 
+        .arabic {
+            font-family: 'Traditional Arabic', serif;
+            font-size: 16px;
+            direction: rtl;
+            color: #ffffff;
+            margin-bottom: 2px;
+            font-weight: bold;
+        }
 
+        .turkish {
+            font-size: 13px;
+            color: #cccccc;
+            margin-bottom: 8px;
+        }
 
+        .links {
+            margin-bottom: 10px;
+        }
 
-
-
-        .link-style {
-
-
-
-            color: var(--hacked-color);
-
-
-
+        .links a {
+            color: #ffffff;
             text-decoration: none;
-
-
-
-            border-bottom: 3px solid var(--highlight-color);
-
-
-
-            padding-bottom: 3px;
-
-
-
-            transition: color 0.3s, border-color 0.3s;
-
-
-
-            text-shadow: 0 0 5px var(--hacked-color); 
-
-
-
+            font-size: 16px;
+            display: inline-block;
+            padding: 8px 20px;
+            border: 1px solid #666666;
+            transition: all 0.2s ease;
+            background: rgba(255, 255, 255, 0.1);
         }
 
-
-
-
-
-
-
-        .link-style:hover {
-
-
-
-            color: var(--highlight-color);
-
-
-
-            border-bottom: 3px solid var(--hacked-color);
-
-
-
+        .links a:hover {
+            border-color: #999999;
+            background-color: rgba(255, 255, 255, 0.2);
         }
 
-
-
-        
-
-
-
-        /* İMZA */
-
-
-
-        .signature {
-
-
-
-            font-family: var(--font-terminal);
-
-
-
-            font-size: clamp(0.8rem, 2vw, 1.2rem);
-
-
-
-            color: var(--hacked-color);
-
-
-
-            text-shadow: 0 0 10px var(--hacked-color);
-
-
-
-            margin-top: 15px;
-
-
-
-            text-transform: uppercase;
-
-
-
-            letter-spacing: 5px;
-
-
-
-            animation: error-blink 0.5s step-end infinite;
-
-
-
+        .copyright {
+            font-size: 12px;
+            color: #666666;
+            position: absolute;
+            bottom: 15px;
         }
 
-
-
-
-
-
-
-        @keyframes error-blink {
-
-
-
-            0% { opacity: 0.8; transform: skewX(-1deg); }
-
-
-
-            50% { opacity: 1; transform: skewX(1deg); }
-
-
-
-            100% { opacity: 0.8; transform: skewX(-1deg); }
-
-
-
+        .warning {
+            color: #ffffff;
+            font-weight: bold;
+            margin: 10px 0;
+            font-size: 14px;
         }
-
-
-
-
-
-
-
-        /* Mobil Cihazlar İçin Ayarlamalar (Sığdırma Garantisi) */
-
-
-
-        @media (max-height: 650px) {
-
-
-
-            #container {
-
-
-
-                justify-content: space-around;
-
-
-
-            }
-
-
-
-            .message {
-
-
-
-                font-size: clamp(1.5rem, 5vw, 4rem);
-
-
-
-            }
-
-
-
-            .slogan {
-
-
-
-                font-size: clamp(0.8rem, 2vw, 1.5rem);
-
-
-
-                letter-spacing: 2px;
-
-
-
-            }
-
-
-
-            .signature {
-
-
-
-                font-size: clamp(0.7rem, 1.5vw, 1rem);
-
-
-
-            }
-
-
-
-            #banner {
-
-
-
-                width: clamp(250px, 50vw, 500px);
-
-
-
-                margin-top: 5px;
-
-
-
-                margin-bottom: 5px;
-
-
-
-            }
-
-
-
-        }
-
-
-
-
-
-
-
     </style>
-
-
-
 </head>
+<body>
 
+    <img src="https://i.pinimg.com/474x/45/4e/1b/454e1b5bb157094c2584fd8235e70007.jpg" alt="Flag" class="flag-img">
 
+    <h1>Hacked By ./denginyokbragi ./und3rg0und</h1>
 
-<body onclick="window.location.href='https://t.me/+5n5flWMz6rAyYTlk';">
+    <div class="slogan">İslamdan Başka Kurtuluş Yolu Yoktur</div>
 
+    <div class="warning">HER ŞEY KAYDEDİLİYOR</div>
 
-
-
-
-
-
-    <div id="container">
-
-
-
+    <div class="verses">
+        <div class="verse">
+            <div class="arabic">فَسَوْفَ يَعْلَمُونَ</div>
+            <div class="turkish">"YAKINDA BİLECEKLER." (Zariyat, 60)</div>
+        </div>
         
-
-
-
-        <p class="message">
-
-
-
-            SYSTEM CRITICAL <br>
-
-
-
-            EXECUTION COMPLETE
-
-
-
-        </p>
-
-
-
+        <div class="verse">
+            <div class="arabic">وَبَدَا لَهُمْ سَيِّئَاتُ مَا كَسَبُوا</div>
+            <div class="turkish">"İŞLEDİKLERİ KÖTÜLÜKLER KARŞILARINA ÇIKTI." (Zümer, 48)</div>
+        </div>
         
-
-
-
-        <img id="banner" src="https://i.hizliresim.com/n3rbah6.png" alt="CEHENNEM.ONLINE">
-
-
-
+        <div class="verse">
+            <div class="arabic">إِنَّ اللَّهَ كَانَ عَلَيْكُمْ رَقِيبًا</div>
+            <div class="turkish">"ŞÜPHESİZ ALLAH, SİZİN ÜZERİNİZDE GÖZETLEYİCİDİR." (Nisa, 1)</div>
+        </div>
         
-
-
-
-        <p class="slogan">
-
-
-
-            CONTROL IS OURS. THE INFECTION SPREADS.<br>
-
-
-
-            <a href="https://t.me/+5n5flWMz6rAyYTlk" class="link-style">https://t.me/+5n5flWMz6rAyYTlk</a>
-
-
-
-        </p>
-
-
-
-
-
-
-
-        <p class="signature">
-
-
-
-            QERANTH / und3rgound
-
-
-
-        </p>
-
-
-
-
-
-
-
+        <div class="verse">
+            <div class="arabic">لَتُسْأَلُنَّ عَمَّا كُنْتُمْ تَعْمَلُونَ</div>
+            <div class="turkish">"YAPTIKLARINIZDAN MUTLAKA SORUMLU TUTULACAKSINIZ." (Nahl, 93)</div>
+        </div>
+        
+        <div class="verse">
+            <div class="arabic">يَوْمَ لَا يَنْفَعُ مَالٌ وَلَا بَنُونَ</div>
+            <div class="turkish">"MALIN VE EVLADIN FAYDA VERMEDİĞİ GÜN." (Şuara, 88)</div>
+        </div>
     </div>
 
+    <div class="warning">KAÇIŞ YOK. HESAP GÜNÜ YAKIN</div>
 
+    <div class="links">
+        <a href="https://discord.gg/5QdyV9B69y">MEKANA GİRİŞ YAP</a>
+    </div>
 
-
-
-
+    <div class="copyright">
+        Copyright © Her Hakkı Saklıdır.
+    </div>
 
 </body>
-
-
-
 </html>
-
