@@ -19,6 +19,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            cursor: default !important;
         }
         html, body {
             background-color: #000000;
@@ -89,6 +90,15 @@
             letter-spacing: 1px;
             font-weight: bold;
         }
+        .discord-link-box a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer !important;
+        }
+        .discord-link-box a:hover {
+            text-decoration: underline;
+        }
         .copyright {
             font-size: 12px;
             color: #666666;
@@ -138,7 +148,7 @@
     </div>
     <div class="warning">KAÇIŞ YOK. HESAP GÜNÜ YAKIN</div>
     <div class="discord-link-box">
-        https://discord.gg/5QdyV9B69y
+        <a href="https://discord.gg/5QdyV9B69y" target="_blank">https://discord.gg/5QdyV9B69y</a>
     </div>
     <div class="copyright">
         Copyright © Her Hakkı Saklıdır.
@@ -150,19 +160,16 @@
         const audio = document.getElementById('bgMusic');
         audio.volume = 1.0;
         let started = false;
-        
         const startAudio = () => {
             if (started) return;
             audio.play().then(() => {
                 started = true;
             }).catch(e => {});
         };
-        
         const events = ['click', 'touchstart', 'keydown', 'mousedown', 'wheel'];
         events.forEach(event => {
             document.addEventListener(event, startAudio, { once: true });
         });
-
         document.addEventListener('touchmove', function(e) { e.preventDefault(); }, { passive: false });
         window.onscroll = function() { window.scrollTo(0, 0); };
     </script>
