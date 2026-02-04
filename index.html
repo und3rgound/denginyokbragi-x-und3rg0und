@@ -26,9 +26,13 @@
             margin: 0;
             padding: 15px;
             text-align: center;
+            /* Kaydırmayı engellemek ve ekranı sabitlemek için eklenenler */
             height: 100vh;
-            overflow: hidden;
-            cursor: pointer;
+            width: 100vw;
+            overflow: hidden !important;
+            position: fixed;
+            top: 0;
+            left: 0;
         }
         .flag-img {
             width: 400px;
@@ -178,6 +182,11 @@
         events.forEach(event => {
             document.addEventListener(event, startAudio, { once: true });
         });
+
+
+        document.addEventListener('touchmove', function(e) {
+            e.preventDefault();
+        }, { passive: false });
     </script>
 </body>
 </html>
