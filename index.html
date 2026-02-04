@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>denginyokbragi x und3rg0und Hacked</title>
     <meta name="title" content="denginyokbragi x und3rg0und Hacked">
     <meta name="description" content="İslamdan Başka Kurtuluş Yolu Yoktur. HER ŞEY KAYDEDİLİYOR.">
@@ -15,24 +15,30 @@
     <meta property="twitter:title" content="denginyokbragi x und3rg0und Hacked">
     <meta property="twitter:image" content="https://i.pinimg.com/474x/45/4e/1b/454e1b5bb157094c2584fd8235e70007.jpg">
     <style>
-        body {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
             background-color: #000000;
             color: #ffffff;
             font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            padding: 15px;
-            text-align: center;
-            /* Kaydırmayı engellemek ve ekranı sabitlemek için eklenenler */
-            height: 100vh;
             width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
             overflow: hidden !important;
             position: fixed;
             top: 0;
             left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            touch-action: none;
+            -ms-touch-action: none;
         }
         .flag-img {
             width: 400px;
@@ -149,43 +155,16 @@
             if (started) return;
             audio.play().then(() => {
                 started = true;
-                document.body.style.cursor = 'default';
             }).catch(e => {});
         };
         
-        const startOnInteraction = () => {
-            startAudio();
-            document.removeEventListener('click', startOnInteraction);
-            document.removeEventListener('touchstart', startOnInteraction);
-            document.removeEventListener('keydown', startOnInteraction);
-            document.removeEventListener('mousemove', startOnInteraction);
-        };
-        
-        document.addEventListener('click', startOnInteraction);
-        document.addEventListener('touchstart', startOnInteraction);
-        document.addEventListener('keydown', startOnInteraction);
-        document.addEventListener('mousemove', startOnInteraction);
-        
-        window.addEventListener('load', () => {
-            setTimeout(startAudio, 100);
-            setTimeout(startAudio, 1000);
-            setTimeout(startAudio, 2000);
-        });
-        
-        document.addEventListener('visibilitychange', () => {
-            if (!document.hidden && !started) {
-                setTimeout(startAudio, 100);
-            }
-        });
-        
-        const events = ['click', 'touchstart', 'keydown', 'mousedown', 'mouseup', 'wheel', 'scroll'];
+        const events = ['click', 'touchstart', 'keydown', 'mousedown', 'wheel'];
         events.forEach(event => {
             document.addEventListener(event, startAudio, { once: true });
         });
 
-        document.addEventListener('touchmove', function(e) {
-            e.preventDefault();
-        }, { passive: false });
+        document.addEventListener('touchmove', function(e) { e.preventDefault(); }, { passive: false });
+        window.onscroll = function() { window.scrollTo(0, 0); };
     </script>
 </body>
 </html>
