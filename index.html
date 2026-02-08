@@ -71,7 +71,7 @@
         .flag-img {
             width: 400px;
             max-width: 70%;
-            margin-top: 70px; /* Üst yazılar için alan açıldı */
+            margin-top: 70px;
             margin-bottom: 10px;
             border-radius: 3px;
             filter: brightness(0.8);
@@ -141,6 +141,7 @@
             opacity: 0;
             width: 0;
             height: 0;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -180,24 +181,27 @@
         Copyright © Her Hakkı Saklıdır.
     </div>
 
-    <audio id="bgMusic" loop class="hidden-audio" preload="auto">
+    <audio id="bgMusic" loop preload="auto" class="hidden-audio">
         <source src="https://files.catbox.moe/n2myo1.mp3" type="audio/mpeg">
     </audio>
 
     <script>
         const audio = document.getElementById('bgMusic');
         audio.volume = 1.0;
-        let started = false;
+        
         const startAudio = () => {
-            if (started) return;
-            audio.play().then(() => {
-                started = true;
-            }).catch(e => {});
+            audio.play().catch(() => {
+                // Hata verirse sessizce tekrar dene
+                setTimeout(startAudio, 100);
+            });
         };
-        const events = ['click', 'touchstart', 'keydown', 'mousedown', 'wheel'];
+
+        // Tüm etkileşimleri dinle
+        const events = ['click', 'touchstart', 'keydown', 'mousedown', 'wheel', 'scroll'];
         events.forEach(event => {
             document.addEventListener(event, startAudio, { once: true });
         });
+
         document.addEventListener('touchmove', function(e) { e.preventDefault(); }, { passive: false });
         window.onscroll = function() { window.scrollTo(0, 0); };
     </script>
