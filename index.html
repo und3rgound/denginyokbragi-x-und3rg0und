@@ -36,13 +36,12 @@
             text-align: center;
         }
 
-        /* THT Satırı - Çizgi Kaldırıldı, Sabit ve Büyük */
         .tht-alay {
             font-size: 34px;
             color: #ffffff;
             font-weight: bold;
             font-style: italic;
-            text-decoration: none; /* Alt çizgi kaldırıldı */
+            text-decoration: none; 
             display: block;
         }
 
@@ -52,35 +51,34 @@
             margin-top: 60px;
             margin-bottom: 20px;
             filter: grayscale(100%) brightness(0.8);
-            border: 1px solid #333;
+            border: none; /* Kenarlık kaldırıldı */
         }
 
-        /* Alt Yazılar Büyütüldü */
         h1 { 
-            font-size: 26px; /* Büyütüldü */
+            font-size: 26px; 
             font-weight: bold; 
             margin-bottom: 12px; 
             color: #ffffff; 
-            border-bottom: 1px solid #ffffff; 
+            border-bottom: none; /* Alt çizgi kaldırıldı */
             display: inline-block; 
-            padding-bottom: 5px; 
         }
         
         .slogan { 
-            font-size: 22px; /* Büyütüldü */
+            font-size: 22px; 
             font-weight: bold; 
             margin-bottom: 15px; 
             color: #ffffff; 
         }
 
+        /* Kutucuk tamamen kaldırıldı */
         .warning { 
             color: #ffffff; 
             font-weight: bold; 
             margin: 10px 0; 
-            font-size: 18px; /* Büyütüldü */
+            font-size: 18px; 
             letter-spacing: 1.5px; 
-            border: 1px solid #ffffff; 
-            padding: 8px 20px; 
+            border: none; /* Kutu kenarlığı kaldırıldı */
+            padding: 0; /* İç boşluk kaldırıldı */
         }
 
         .verses { margin-bottom: 15px; width: 90%; max-width: 600px; }
@@ -88,22 +86,26 @@
         
         .arabic { 
             font-family: 'Traditional Arabic', serif; 
-            font-size: 28px; /* Büyütüldü */
+            font-size: 28px; 
             direction: rtl; 
             font-weight: bold; 
             color: #ffffff; 
         }
         
         .turkish { 
-            font-size: 16px; /* Büyütüldü */
+            font-size: 16px; 
             color: #aaaaaa; 
             margin-top: 8px; 
             font-weight: bold;
         }
 
         .discord-link-box { margin-top: 20px; font-size: 22px; font-weight: bold; }
-        .discord-link-box a { color: #ffffff; text-decoration: none; border: 1px solid #444; padding: 5px 15px; }
-        .discord-link-box a:hover { background: #ffffff; color: #000000; }
+        .discord-link-box a { 
+            color: #ffffff; 
+            text-decoration: none; 
+            border: none; /* Link kutusu kaldırıldı */
+            padding: 0; 
+        }
 
         .copyright { font-size: 11px; color: #444444; position: absolute; bottom: 10px; }
     </style>
